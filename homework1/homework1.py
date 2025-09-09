@@ -70,7 +70,7 @@ print(type(n)) # n is a range, a sequence of integers 0 through n-1
 '''
 
 # --- Booleans ---
-
+'''
 print(10>9) # True, 10 is greater than 9
 
 print(10==9) # False, 10 does not equal 9
@@ -99,18 +99,88 @@ print(bool([])) # False, empty set
 
 print(bool({})) # False, empty set
 
-print(bool(True and False))
+print(bool(True and False)) # False, and operator returns False if either value is False
 
-print(bool(True and True))
+print(bool(True and True)) # True, and operator returns True since neither value is False
 
-print(bool(False and False))
+print(bool(False and False)) # False, and operator returns False since both values are False
 
-print(bool(True or False))
+print(bool(True or False)) # True, or operator returns True if either value is True
 
-print(bool(True or True))
+print(bool(True or True)) # True, or operator returns True since both values are true
 
-print(bool(False or False))
+print(bool(False or False)) # False, or operator return False since neither vlue is True
 
-print(bool(not(False)))
+print(bool(not(False))) # True, defined to be the opposite of false
 
-print(bool(not(True)))
+print(bool(not(True))) # False, defined to be the opposite of true
+
+# Question 3
+print(bool("False")) # True, this is technically a non-empty string so it is True even though the string reads "False"
+
+# Question 4
+print(bool(0.0)) # False, this still has a value of 0 even though it is a float rather than an int
+'''
+'''
+1. False is generally represented by the value False, 0, empty sets, or untrue mathematical equations. Everything else is true for the msot part.
+2. I was a bit surprised about how the and and or operators functioned since they're rather nonsensical in this context.
+3. (See Question 3)
+4. (See Question 4)
+'''
+
+# --- Operators ---
+
+# -- Arithmetic Operators --
+
+print(10+5) # 15, + performs addition
+
+print(10-5) # 5, - performs subtraction
+
+print(2*4) # 8, * performs multiplication
+
+print(6/3) # 2, / performs division
+
+print(5%2) # 1, % solves for the remainder of a division operation
+
+print(3**2) # 9, ** performs exponentiation
+
+print(15//2) # 7, // performs division rounded to the next smallest whole number
+
+# -- Comparison Operators --
+
+print(5==2) # False, == means equal to
+
+print(10!=10) # False, != means is not equal to
+
+print(2<5) # True, < means is less than
+
+print(5<=6) # True, <= means is less than or equal to
+
+print(1>=10) # False, >= means is greater than or equal to
+
+# -- Assignments Operators --
+
+x=5
+
+x+=5 # += performs addition and then sets the value equal to the sum
+print(x) # 5 + 5 = 10
+
+x-=4 # -= performs subtraction and then sets the value equal to the difference
+print(x) # 10 - 4 = 6
+
+x*=3 # *= performs multiplications and then sets the vaule equal to the product
+print(x) # 6 * 3 = 18
+
+# -- Logical Operators --
+
+# 1. and outputs True only if all values are True and outputs False otherwise
+print(bool(1 and True)) # True
+print(bool(0 and 1)) # False
+
+# 2. or outputs True if any values are True and outputs False otherwise
+print(bool("Sol" or False)) # True
+print(bool([] or '')) # False
+
+# 3. not outputs the logical negation of the value
+print(bool(not(0))) # True
+print(bool(not([1,1,2,3,5,8,13]))) # False
