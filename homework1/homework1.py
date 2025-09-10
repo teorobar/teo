@@ -2,7 +2,6 @@
 
 # --- Variables and Data Types ---
 
-'''
 a=10
 print(a)
 print(type(a)) # a is an int, or integer, a whole number with no decimals
@@ -59,7 +58,6 @@ print(type(m)) # m is a float, or floating point number, a number with a decimal
 n=range(6)
 print(n)
 print(type(n)) # n is a range, a sequence of integers 0 through n-1
-'''
 
 '''
 1. I found 9 unique data types.
@@ -70,7 +68,7 @@ print(type(n)) # n is a range, a sequence of integers 0 through n-1
 '''
 
 # --- Booleans ---
-'''
+
 print(10>9) # True, 10 is greater than 9
 
 print(10==9) # False, 10 does not equal 9
@@ -120,10 +118,10 @@ print(bool("False")) # True, this is technically a non-empty string so it is Tru
 
 # Question 4
 print(bool(0.0)) # False, this still has a value of 0 even though it is a float rather than an int
+
 '''
-'''
-1. False is generally represented by the value False, 0, empty sets, or untrue mathematical equations. Everything else is true for the msot part.
-2. I was a bit surprised about how the and and or operators functioned since they're rather nonsensical in this context.
+1. False is generally represented by the value False, 0, empty sets, or untrue mathematical equations. Everything else is true for the most part.
+2. I was a bit surprised about how the and and or operators functioned since they seem rather nonsensical in this context.
 3. (See Question 3)
 4. (See Question 4)
 '''
@@ -183,4 +181,120 @@ print(bool([] or '')) # False
 
 # 3. not outputs the logical negation of the value
 print(bool(not(0))) # True
-print(bool(not([1,1,2,3,5,8,13]))) # False
+print(bool(not([1]))) # False
+
+'''
+1. / gives the exact quotient as a float while // gives a rounded whole number quotient.
+2. % gives the remainder of the division while // gives a rounded whole numebr quotient.
+3. I would use % to calculate the remainder of a whole number division. e.g. 7 % 2 = 1
+4. Assignment operators perform an operation on a variable and then assign the variable the new value.
+'''
+
+# --- Strings ---
+
+my_string="hello"
+
+print(my_string) # Prints: hello
+
+print(my_string[0]) # Prints: h
+
+print(my_string[1]) # Prints: e
+
+print(my_string[2]) # Prints: l
+
+print(my_string[3]) # Prints: l
+
+print(my_string[4]) # Prints: o
+
+print(my_string[-1]) # Prints: o
+
+print(my_string[1:3]) # Prints: el
+
+print(my_string[0:5:2]) # Prints: hlo
+
+print(len(my_string)) # Prints: 5
+
+print(my_string+"goodbye") # Prints: hellogoodbye
+
+print(7*my_string) # Prints: hellohellohellohellohellohellohello
+
+# Question 2:
+name="Oski"
+print("Hello, my name is", name)
+
+# Question 3:
+print(f"Hello, my name is {name}")
+
+'''
+1. slicing allows you to choose which elements in a set to include. I did this in my_string[1:3] and my_string[0:5:2]
+2. The value of name was printed, finishing the sentence
+3. The value of name was added to the string by adding f in front
+4. The second statement used an f-string to embed the call name directly inside of the string before printing it
+'''
+
+# --- Terminal Commands ---
+
+'''
+1. cd
+Changes directories. Use it to move from one folder to another
+Example: cd Desktop
+
+2. ls
+Lists all files in directory
+Example: ls homework1
+
+3. ls -a
+Lists all files in directory including hidden files
+Example: ls -a homework1
+
+4. mkdir
+Makes a directory inside current directory
+Example: mkdir homework1
+
+5. cat
+Displays content of text files
+Example: cat homework1.py
+
+6. pwd
+Displays directory tree
+Example: pwd
+
+7. cd ..
+Opens parent directory
+Example: cd ..
+
+8. cd .
+Opens current directory
+Example: cd .
+
+9. cd ~
+Opens home directory
+Example: cd ~
+
+10. cp
+Creates a copy of a file
+Example: cp homework1 homework1_final
+
+11. mv
+Renames a file or directory or moves or a file to a new directory
+Example: mv homework1 homework1_final
+
+12. rm
+Removes a file or directory
+Example: rm homework1
+
+13. clear
+Erases all previous output from the screen
+Example: clear
+
+14. grep
+Prints lines that contain specified text
+Example: grep "Oski" homework1.py
+'''
+
+'''
+1. nano is used to edit code from the terminal. man accesses manual pages for a specific command. rmdir removes a directory.
+2. ls -a shows hidden files that ls does not.
+3. A hidden file is simply a file that is not displayed by default.
+4. grep -v does the inverse of grep, identifying lines without specific text. -l prevides a longer format of the output with more detail. -f forces a command, bypassing warnings
+'''
