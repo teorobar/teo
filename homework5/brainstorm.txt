@@ -1,0 +1,10 @@
+1. 
+	I'm interested in neutron stars, solar probes, chaotic systems like double pendulums, knot theory in mathematics, and oscilloscopes (which we're using in 5BL)
+2. 
+	Neutron stars: https://ui.adsabs.harvard.edu/abs/1974PhRvL..32..324R/abstract is a paper concerning the upper mass limit of a neutron star. Papers like this in combination with the widely accepted Chandrasekhar limit describing the upper mass limit of the neutron star's predecessor -- the white dwarf -- can give us a theoretical range of masses that neutron stars can exist at.
+	Double pendulums: https://scipython.com/blog/the-double-pendulum/ this website provides the python code for a double pendulum simulation. Since double pendulums are chaotic systems, the code doesn't necessarily "solve" the system in the sense that if you recreated it with the exact parameters used in the code in real life, you would get a wildly different outcome within a short amount of time.
+	Knot theory: https://arxiv.org/pdf/1101.0665 this is a paper by Kauffman that describes knot theory, which is a field of mathematics which I do not understand in the slightest but interests me nonetheless. I'm not entirely sure how I would be able to connect it to python though so it's an unlikely candidate for the final project.
+3. 
+	I could definitely use my python skills to do a simulation similar to that shown in the link I connected to double pendulums. Looking at their code, a good amount of it seems to be variables, functions, and numpy/pyplot tools which we have already learned. I would have to learn how to create animations like theirs and probably review some mechanics depending on the specific simulation but I think this looks entertaining and achievable.
+4.
+	On the more ambitious end, I would write a script that could do more generalized physics simulations such as freely adding various masses and pendulums, but I'm not sure where I would start with that. Realistically, I could create something similar to that shown in the link which simulates one specific system with variable parameters.
